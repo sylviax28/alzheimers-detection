@@ -1,0 +1,222 @@
+/*GENERAL*/
+.split {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.left {
+    left: 0;
+    background-color: rgb(249, 234, 225);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    justify-content: flex-start;
+
+
+}
+
+.right {
+    right: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+/*NAVIGATION BAR*/
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: rgb(204, 139, 134);
+    font-family: "Trebuchet MS";
+    padding-right: 16px;
+    padding-left: 16px;
+    display: flex;
+    height: 40px;
+    z-index: 1000;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    margin-left: 20%;
+    width: 1000px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+
+li a {
+    position: relative;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+li a:hover::after,
+li a:focus::after {
+    width: 100%;
+}
+
+li a.active {
+    color: rgb(125, 79, 80);
+}
+
+
+li a.active::after {
+    width: 100%;
+    background-color: rgb(125, 79, 80);
+}
+
+
+/*HOME PAGE*/
+.h-header {
+    margin-top: 150px;
+    margin-bottom: 80px;
+    color: black;
+    font-size: 3.2vw;
+    font-family: "Trebuchet MS";
+    text-align: center;
+    width: 80%
+}
+
+.h-img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+
+}
+
+.start-container {
+    text-align: center;
+    margin-top: 500px;
+    height: 100vh;
+    width: 100%;
+    font-size: 1.3vw;
+    font-family: "Trebuchet MS";
+
+}
+
+.start-button {
+    background-color: rgb(249, 234, 225);
+    height: 100 px;
+    width: 20%;
+    border: solid 2px rgb(204, 139, 134);
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+/*DETECTION PAGE*/
+.d-header {
+    margin-top: 150px;
+    color: black;
+    font-size: 6vw;
+    font-family: "Trebuchet MS";
+    text-align: center;
+    width: 80%
+}
+
+#input-image {
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+    border: 1px solid grey;
+}
+
+#display-image {
+    margin-top: 20px;
+    width: 500px;
+    height: 2000px;
+    border: 2px solid black;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+#result {
+    font-size: 2vw;
+    font-family: "Trebuchet MS";
+    color: black;
+    margin-top: 20vw;
+}
+
+/*CONTACTS PAGE*/
+.c-header {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 3.2vw;
+    font-family: "Trebuchet MS";
+    text-align: center;
+    width: 80%
+}
+
+.image-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.icons {
+    height: 50px;
+    width: 50px;
+    margin-left: 100px
+}
+
+.contacts-p {
+    font-size: 40px;
+    font-family: "Trechbuchet MS";
+    margin: 0;
+    text-align: left;
+    width: auto;
+}
+
+.goals-p {
+    text-align: center;
+}

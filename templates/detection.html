@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Detection</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/detection" class="active">Detection</a></li>
+                <li><a href="/contacts">Contacts</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="split left">
+            <h1 class="d-header"> Detecting Alzheimer's in Brain Scans</h1>
+            <input type="file" id="input-image" accept="image/png, image/jpg">
+
+            <button id="start-btn">Start Detection</button>
+
+            <div id="display-image"></div>
+            <script src="../static/displayImage.js"></script>
+
+
+
+
+        </div>
+
+        <div class="split right">
+            <p id="result"></p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
