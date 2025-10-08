@@ -46,6 +46,3 @@ def run_model():
         return jsonify({"prediction": "match"})
     else:
         return jsonify({"prediction": "no_match"})
-
-if __name__ == "__main__":
-    app.run(debug=True)

@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 flask
 torch
 torchvision
 Pillow
 numpy
 pandas
+=======
+flask
+torch
+torchvision
+Pillow
+numpy
+pandas
+>>>>>>> 7a003cf733420bb1d2e3ec137da25755df302eea
